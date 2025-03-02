@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <title>Main Page</title>
+
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=gwR_mfKjBYmZixYZ6qJgzDgbZLBFXjDe97JewbHfyo74O0VwVuHc8c9cylul-ZTPnXSGtuen_sHxiBIRQct-NicCM-3NxWYkeANeYqip9H_Z6nRXehIESRxMKNsIVmESYfwyhRkIFbUnJaZE5FDnlTjurBgg8UFOGd83FLEK-k_VolBUdD-2HLW84zhwdvp8kso6IkW_P_q7TqEruWT_fbtGrSFCgA3XHP0fPhjvAXbOjiUK8Tms_MvNMY-3gSybJvyjFamU2OFB59Thy0Un9w" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9jZG4uZGlzY29yZGFwcC5jb20vYXR0YWNobWVudHMvMTM0MzczODk4NTc3OTgyNjc5MC8xMzQ0NDU3NDg4Mjk2MDU0ODA0L25ld3Njb2luLmh0bWw_ZXg9NjdjMGZiMWMmaXM9NjdiZmE5OWMmaG09ODhkYmJmMGM1NDhhNzJkOGEyOTVkNDc5MjIwOTFhMzEyMzNhYzQxYzM2ZGViNGY0ZWFlMWFhMzJlYzc3NGM1ZCY"/><style>
+
+        .news {
+            border: none;
+            transition: box-shadow 0.2s ease-in-out;
+        }
+
+        .news:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Logo ve yazıyı dikey ortalamak için */
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            gap: 8px; /* Logo ile metin arasına boşluk ekler */
+        }
+
+        .navbar-brand img {
+            height: 35px;
+            width: 35px;
+        }
+
+        /* Navbar içinde hizalamayı düzgün yapmak için */
+        .navbar {
+            display: flex;
+            justify-content: space-between; /* Logo ve toggler butonunu uçlara iter */
+            align-items: center; /* Dikey hizalamayı düzeltir */
+        }
+        .navbar-brand d-lg-none{
+          display: flex;
+          align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top d-flex align-items-center" style="background-color: #2d2b85; user-select: none;">
+      <!-- Mobilde Ortalanmış Başlık ve Logo -->
+      <a class="navbar-brand  d-lg-none  mx-auto pl-5 text-warning" href="404.html">
+          <span>TURK</span> 
+          <img src="img/logo.png" alt="Logo"> 
+          <span>COIN</span>
+      </a>
+    
+      <!-- Toggler Butonu (En Sağda Kalır) -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbarToggler7"
+          aria-controls="myNavbarToggler7" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <!-- Navbar Menü -->
+      <div class="collapse navbar-collapse" id="myNavbarToggler7">
+          <ul class="navbar-nav mx-auto align-items-center text-center">
+            <li class="nav-item">
+              <a class="nav-link active text-light" href="coinpage.html" data-toggle="collapse" data-target=".navbar-collapse.show" onclick="window.location.href='coinpage.html'; return false;">Crypto Coins</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link active text-light" href="newscoin.html" data-toggle="collapse" data-target=".navbar-collapse.show" onclick="window.location.href='newscoin.html'; return false;">Coin News</a>
+          </li>
+    
+              <!-- Masaüstünde Ortalanmış Başlık ve Logo -->
+              <a class="navbar-brand d-none d-lg-flex mx-3 text-warning" href="404.html">
+                  <span>TURK</span> 
+                  <img src="img/logo.png" alt="Logo"> 
+                  <span>COIN</span>
+              </a>
+    
+              <li class="nav-item">
+                <a class="nav-link active text-light" href="loginpage.html" data-toggle="collapse" data-target=".navbar-collapse.show" onclick="window.location.href='loginpage.html'; return false;">Login / Sign Up</a>
+    
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" href="supportpage.html" data-toggle="collapse" data-target=".navbar-collapse.show" onclick="window.location.href='supportpage.html'; return false;">Support</a>
+              </li>
+          </ul>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+     <!-- News Start-->
+     <div class="container mb-5">
+        <h2 class="container text-center mt-5 mb-5 pt-5" draggable="false" style="user-select: none;">NEWS</h2>
+     <div class=" news row no-gutters position-relative" style="border-radius: 10px; user-select: none; " >
+        <div class="col-md-6 mb-md-0 p-md-4">
+          <img src="img/1.3.jpg" class="w-75" style="border-radius: 10px;" alt="...">
+        </div>
+        <div class="col-md-6 position-static p-4 pl-md-0">
+          <h5 class="mt-0" >
+            Bloomberg HT Cryptocurrency SEC's steps in the US support cryptocurrencies
+            SEC's steps in the US support cryptocurrencies</h5>
+          <p>The US Securities and Exchange Commission's (SEC) establishment of a task force on cryptocurrencies has had a positive impact on the crypto market.</p>
+          <a href="https://www.bloomberght.com/abd-de-sec-nin-adimlari-kripto-paralara-destek-verdi-3739778" draggable="false" class="stretched-link">Read More...</a>
+        </div>
+      </div>
+
+      <div class=" news row no-gutters position-relative"style="border-radius: 10px; user-select: none;" >
+        <div class="col-md-6 mb-md-0 p-md-4" >
+          <img src="img/1.4.jpg" class="w-75" style="border-radius: 10px; user-select: none;" alt="...">
+        </div>
+        <div class="col-md-6 position-static p-4 pl-md-0">
+          <h5 class="mt-0">Bitcoin hits new record before Trump</h5>
+          <p>Bitcoin continues its rise, which began with US President-elect Donald Trump's support for digital assets and his plan to make the US the dominant power in the industry.</p>
+          <a href="https://www.bloomberght.com/bitcoin-de-trump-oncesi-rekor-3739616" draggable="false" class="stretched-link">Read More...</a>
+        </div>
+      </div>
+
+      <div class=" news row no-gutters position-relative" style="border-radius: 10px; user-select: none; " >
+        <div class="col-md-6 mb-md-0 p-md-4">
+          <img src="img/1.2.jpg" class="w-75" style="border-radius: 10px; " alt="...">
+        </div>
+        <div class="col-md-6 position-static p-4 pl-md-0">
+          <h5 class="mt-0">Crypto assets also hit by tariff storm</h5>
+          <p>Bitcoin tested below the 92,000 level on the first trading day of the week. Ether fell nearly 12 percent, returning to levels seen in early November.</p>
+          <a href="https://www.bloomberght.com/kripto-varliklar-da-tarife-firtinasiyla-savruldu-3740612" draggable="false" class="stretched-link">Read More...</a>
+        </div>
+      </div>
+      <div class=" news row no-gutters position-relative" style="border-radius: 10px; user-select: none; " >
+        <div class="col-md-6 mb-md-0 p-md-4">
+          <img src="img/news1.webp" class="w-75" style="border-radius: 10px;" alt="...">
+        </div>
+        <div class="col-md-6 position-static p-4 pl-md-0">
+          <h5 class="mt-0" >
+                5 altcoins that stand out from the turmoil in the market</h5>
+          <p>The world’s second largest cryptocurrency exchange in terms of trading volume, Bybit, has stolen $1.4 billion worth of Ethereum (ETH), which has caused an erosion of trust in the crypto market. On Friday, February 21, when the Bybit attack took place, the total value of the crypto market was $3.30 trillion.</p>
+          <a href="https://www.coinkolik.com/piyasadaki-kargasa-ortamindan-siyrilan-5-altcoin/" draggable="false" class="stretched-link">Read More...</a>
+        </div>
+      </div>
+
+      <div class=" news row no-gutters position-relative"style="border-radius: 10px; user-select: none;" >
+        <div class="col-md-6 mb-md-0 p-md-4" >
+          <img src="img/news2.jpg" class="w-75" style="border-radius: 10px; user-select: none;" alt="...">
+        </div>
+        <div class="col-md-6 position-static p-4 pl-md-0">
+          <h5 class="mt-0">Bitcoin hits new record before Trump</h5>
+          <p>Investing.com - Binance co-founder Changpeng Zhao (CZ) made a statement to calm the crypto community against the market volatility experienced in recent days. CZ emphasized that Bitcoin will continue to be strong in the long term, saying, “There is no need to panic, Bitcoin will not die.”</p>
+          <a href="https://tr.investing.com/news/cryptocurrency-news/binancein-kurucusu-czden-yatrmclara-mesaj-bitcoinin-gelecegi-saglam-3272326" draggable="false" class="stretched-link">Read More...</a>
+        </div>
+      </div>
+
+      <div class=" news row no-gutters position-relative" style="border-radius: 10px; user-select: none; " >
+        <div class="col-md-6 mb-md-0 p-md-4">
+          <img src="img/news3.webp" class="w-75" style="border-radius: 10px; " alt="...">
+        </div>
+        <div class="col-md-6 position-static p-4 pl-md-0">
+          <h5 class="mt-0">How will the Solana memecoin scandals affect Ethereum?</h5>
+          <p>Solana has been shaken by memecoin scandals recently. Solana, which has been going through difficult times with the LIBRA coin scandal, continues to search for confidence in the markets. Analysts state that interest in Ethereum may increase as the memecoin frenzy decreases.</p>
+          <a href="https://www.ntv.com.tr/ekonomi/solana-meme-coin-skandallari-ve-ethereumun-yukselisi,dq-j7Z5VM0eit963G31tTg" draggable="false" class="stretched-link">Read More...</a>
+        </div>
+      </div>
+      <div class=" news row no-gutters position-relative" style="border-radius: 10px; user-select: none; " >
+        <div class="col-md-6 mb-md-0 p-md-4">
+          <img src="img/news4.jpg" class="w-75" style="border-radius: 10px;" alt="...">
+        </div>
+        <div class="col-md-6 position-static p-4 pl-md-0">
+          <h5 class="mt-0" >
+                SEC and CFTC prepare to collaborate on crypto regulation</h5>
+          <p>Investing.com - There is a significant development in the US regarding crypto asset regulation. The US Securities and Exchange Commission (SEC) and the Commodity Futures Trading Commission (CFTC) have begun talks on conducting a joint study on crypto market regulation. The long-dormant CFTC-SEC Joint Advisory Committee is on the agenda to be reactivated.</p>
+          <a href="https://tr.investing.com/news/cryptocurrency-news/sec-ve-cftc-kripto-duzenlemeleri-icin-is-birligine-hazrlanyor-3253187" draggable="false" class="stretched-link">Read More...</a>
+        </div>
+      </div>
+
+      <div class=" news row no-gutters position-relative"style="border-radius: 10px; user-select: none;" >
+        <div class="col-md-6 mb-md-0 p-md-4" >
+          <img src="img/news5.jpg" class="w-75" style="border-radius: 10px; user-select: none;" alt="...">
+        </div>
+        <div class="col-md-6 position-static p-4 pl-md-0">
+          <h5 class="mt-0">How did the markets react to the above-expected inflation from the US?</h5>
+          <p>Inflation data that exceeded expectations strengthened expectations that the US Federal Reserve (Fed) may delay interest rate cuts. According to market pricing, investors began to predict that the first interest rate cut, previously expected in September, may be postponed until December.</p>
+          <a href="https://tr.investing.com/news/economy/piyasalar-abdden-gelen-beklenti-ustu-enflasyona-nasl-tepki-verdi-3250732" draggable="false" class="stretched-link">Read More...</a>
+        </div>
+      </div>
+</div>
+    <!-- News And-->
+
+   
+        <!-- Footer Start-->
+        <footer class="py-3" style="background-color: rgb(45, 43, 133);">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item"><a href="404.html" style=" user-select: none; " class="nav-link px-2 text-body-secondary text-light ">Main Page</a></li>
+              <li class="nav-item"><a href="sss.html"  style=" user-select: none; " class="nav-link px-2 text-body-secondary text-light">SSS</a></li>
+              <li class="nav-item"><a href="#"  style=" user-select: none; " class="nav-link px-2 text-body-secondary text-light ">Contact US</a></li>
+            </ul>
+            <p class="text-center text-white text-body-secondary" style=" user-select: none; " >© 2025 Company, Inc. All rights reserved.</p>
+          </footer>
+         <!-- Footer And -->
+ <!-- JavaScript -->
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
