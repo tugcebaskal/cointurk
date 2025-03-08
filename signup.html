@@ -18,14 +18,17 @@
     <style>
 
 .news {
-            border: none;
-            transition: box-shadow 0.2s ease-in-out;
-        }
+    border: 1px solid #ccc; /* Çerçeve ekler */
+    border-radius: 10px; /* Köşeleri yuvarlar */
+    padding: 10px; /* İç boşluk ekler */
+    margin-bottom: 20px;
+    transition: box-shadow 0.2s ease-in-out;
+}
 
-        .news:hover {
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
 
+ .news:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
         /* Logo ve yazıyı dikey ortalamak için */
         .navbar-brand {
             display: flex;

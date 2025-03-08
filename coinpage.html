@@ -34,36 +34,17 @@
           align-items: center;
         }
         .news {
-    border: none;
+    border: 1px solid #ccc; /* Çerçeve ekler */
+    border-radius: 10px; /* Köşeleri yuvarlar */
+    padding: 10px; /* İç boşluk ekler */
+    margin-bottom: 20px;
     transition: box-shadow 0.2s ease-in-out;
 }
 
+
  .news:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
- /* Logo ve yazıyı dikey ortalamak için */
- .navbar-brand {
-            display: flex;
-            align-items: center;
-            gap: 8px; /* Logo ile metin arasına boşluk ekler */
-        }
-
-        .navbar-brand img {
-            height: 35px;
-            width: 35px;
-        }
-
-        /* Navbar içinde hizalamayı düzgün yapmak için */
-        .navbar {
-            display: flex;
-            justify-content: space-between; /* Logo ve toggler butonunu uçlara iter */
-            align-items: center; /* Dikey hizalamayı düzeltir */
-        }
-        .navbar-brand d-lg-none{
-          display: flex;
-          align-items: center;
-        }
 
     </style>
 </head>
@@ -112,10 +93,11 @@
     </div>
   </nav>
   <!-- Navbar End -->
+
     
 <!-- Grafik Marketplace Start-->
 <div class="container grafik">   
-  <div class="row mt-5 mb-5 d-flex align-items-stretch">
+  <div class="row mt-5 mb-5 d-flex align-items-stretch pt-5">
     <!-- Sol tarafta TradingView grafik kartı -->
     <div class="col-md-8 graphic d-flex">
       <div class="card w-100" style="border-radius: 10px; user-select: none; height: 100%;">
